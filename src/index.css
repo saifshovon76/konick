@@ -158,11 +158,9 @@ section {
 
 /* Clipping Fix for Rounded Containers with Animations */
 .fix-rounded-overflow {
-  mask-image: radial-gradient(white, black);
   -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 /* Typography Enhancements */

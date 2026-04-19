@@ -1,10 +1,11 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoError, setVideoError] = useState(false);
 
   useGSAP(() => {
     // Initial Reveal animation
@@ -85,18 +86,27 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#0b0b0f] to-[#1a1a2e] -z-10" />
       
       <div className="hero-video-container absolute inset-0 -z-10 overflow-hidden">
-        <video
-          ref={videoRef}
-          src="https://assets.mixkit.co/videos/preview/mixkit-abstract-technology-background-with-blue-hues-33075-large.mp4"
-          muted
-          loop
-          autoPlay
-          playsInline
-          className="hero-video w-full h-full object-cover opacity-40"
-          onError={(e) => {
-            (e.target as any).style.display = 'none';
-          }}
-        />
+        {!videoError ? (
+          <video
+            ref={videoRef}
+            src="/assets/video/hero-bg.mp4"
+            muted
+            loop
+            autoPlay
+            playsInline
+            className="hero-video w-full h-full object-cover opacity-40"
+            onError={() => {
+              setVideoError(true);
+            }}
+          />
+        ) : (
+          <img 
+            src="/assets/video/hero-bg.webp" 
+            alt="Hero Animation Baseline" 
+            className="w-full h-full object-cover opacity-40"
+            referrerPolicy="no-referrer"
+          />
+        )}
       </div>
 
       <div className="max-container relative z-10 flex flex-col items-center text-center">
@@ -109,10 +119,10 @@ export default function Hero() {
           </p>
 
           <div className="central-figure w-full max-w-[1000px] h-[450px] mt-12 flex items-center justify-center rounded-[40px] overflow-hidden fade-mask fix-rounded-overflow">
-             <img 
+            <img 
               src="https://picsum.photos/seed/konick-hero/1200/600" 
               alt="Konick Profile" 
-              className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover opacity-90 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
           </div>

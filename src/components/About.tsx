@@ -25,7 +25,7 @@ export default function About() {
             <img 
               src="https://picsum.photos/seed/konick-about/600/800" 
               alt="About Konick" 
-              className="relative w-full max-w-[300px] md:max-w-[400px] aspect-[3/4] object-cover rounded-[40px] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 -rotate-2"
+              className="relative w-full max-w-[300px] md:max-w-[400px] aspect-[3/4] object-cover rounded-[40px] shadow-2xl transition-all duration-700 -rotate-2 opacity-90"
               referrerPolicy="no-referrer"
             />
           </div>

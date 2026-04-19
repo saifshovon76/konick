@@ -68,11 +68,11 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="mt-16 hidden md:block opacity-40">
+          <div className="mt-16 hidden md:block opacity-80">
             <img 
               src="https://picsum.photos/seed/konick-contact/800/800" 
               alt="Contact Deco" 
-              className="w-full max-w-[400px] h-auto rounded-[40px] grayscale hover:grayscale-0 transition-all duration-700 border border-white/5 shadow-2xl rotate-2"
+              className="w-full max-w-[400px] h-auto rounded-[40px] transition-all duration-700 border border-white/5 shadow-2xl rotate-2"
               referrerPolicy="no-referrer"
             />
           </div>

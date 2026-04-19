@@ -25,6 +25,15 @@ To maintain the site's identity, all primary images must adhere to:
 - **Formats**: Prefer **WebP** for transparency/quality or **AVIF** for maximum compression.
 - **Budget**: Keep primary images under **400KB**.
 - **Video**: `hero-bg.mp4` should be optimized for web playback (H.264/AAC, < 5MB).
+- **Video Fallback**: `hero-bg.webp` (Animated WebP created via Ezgif) for cases where video fails to load or on highly restricted mobile devices.
+
+## Video Optimization (via Ezgif)
+For the `hero-bg.mp4`:
+1. Upload your video to [ezgif.com/video-to-mp4](https://ezgif.com/video-to-mp4).
+2. **Resize**: Set width to 1920px (keep aspect ratio).
+3. **Optimize**: Use the "Compress video" tool to reach the 3-5MB target.
+4. **WebP Alternative**: Use "Video to WebP" to create `hero-bg.webp` as a backup.
+5. **Format**: Always export as MP4 (H.264) for maximum browser compatibility.
 
 ## Code Usage
 Replace placeholders in components using paths relative to the public folder:

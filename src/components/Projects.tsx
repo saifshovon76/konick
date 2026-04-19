@@ -44,7 +44,7 @@ export default function Projects() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.5, ease: 'easeInOut' }}
-                  className="w-full h-full object-cover rounded-[40px]"
+                  className="w-full h-full object-cover rounded-[40px] opacity-90"
                   referrerPolicy="no-referrer"
                 />
               </AnimatePresence>

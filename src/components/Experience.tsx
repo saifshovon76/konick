@@ -74,7 +74,7 @@ export default function Experience() {
             </div>
           </div>
 
-          <div className="hidden md:block relative content-wrapper">
+          <div className="relative content-wrapper mt-12 lg:mt-0">
              <div className="absolute -inset-20 bg-accent/5 blur-[100px] rounded-full opacity-50" />
              
              <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.5)] rotate-3 isolate fix-rounded-overflow">
@@ -87,7 +87,7 @@ export default function Experience() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.8, ease: 'easeOut' }}
-                  className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 rounded-[40px]"
+                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-700 rounded-[40px]"
                   referrerPolicy="no-referrer"
                 />
                </AnimatePresence>

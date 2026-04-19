@@ -64,7 +64,7 @@ export default function Skills() {
         <img 
           src="https://picsum.photos/seed/konick-skills/1200/800" 
           alt="Skills Background" 
-          className="w-full h-full object-cover blur-3xl scale-110"
+          className="w-full h-full object-cover blur-none scale-110"
           referrerPolicy="no-referrer"
         />
       </div>
@@ -95,8 +95,8 @@ export default function Skills() {
             <div 
               key={index} 
               className={`
-                bg-white/[0.03] backdrop-blur-xl rounded-[32px] border border-white/10 
-                hover:border-accent/50 hover:bg-white/[0.05] transition-all duration-500 
+                bg-black/40 backdrop-blur-sm rounded-[32px] border border-white/10 
+                hover:border-accent/50 hover:bg-black/60 transition-all duration-500 
                 group relative overflow-hidden flex flex-col justify-between
                 ${skill.size === 'large' ? 'md:col-span-2 md:row-span-2' : ''}
                 ${skill.size === 'medium' ? 'md:col-span-2 md:row-span-1' : ''}
@@ -106,7 +106,7 @@ export default function Skills() {
               {skill.type === 'image' ? (
                 <img 
                   src={skill.src} 
-                  className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700"
                   alt="Skill Visualization"
                   referrerPolicy="no-referrer"
                 />
