@@ -120,7 +120,7 @@ export default function Hero() {
 
           <div className="central-figure w-full max-w-[1000px] h-[450px] mt-12 flex items-center justify-center rounded-[40px] overflow-hidden fade-mask fix-rounded-overflow">
             <img 
-              src="public/assets/images/img1.webp" 
+              src="/assets/images/img1.webp" 
               alt="Konick Profile" 
               className="w-full h-full object-cover opacity-90 transition-all duration-700"
               referrerPolicy="no-referrer"
