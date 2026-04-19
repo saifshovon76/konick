@@ -9,7 +9,7 @@ const expertise = [
   },
   {
     type: 'image',
-    src: 'https://picsum.photos/seed/konick-skill-visual/800/800',
+    src: '/assets/images/img3.webp',
     size: 'medium'
   },
   { 
@@ -62,7 +62,7 @@ export default function Skills() {
       
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <img 
-          src="https://picsum.photos/seed/konick-skills/1200/800" 
+          src="/assets/images/img3.webp" 
           alt="Skills Background" 
           className="w-full h-full object-cover blur-none scale-110"
           referrerPolicy="no-referrer"

@@ -23,11 +23,11 @@ const experiences = [
 ];
 
 const experienceImages = [
-  "https://picsum.photos/seed/exp1/1200/1200",
-  "https://picsum.photos/seed/exp2/1200/1200",
-  "https://picsum.photos/seed/exp3/1200/1200",
-  "https://picsum.photos/seed/exp4/1200/1200",
-  "https://picsum.photos/seed/exp5/1200/1200"
+  "/assets/images/exp1.webp",
+  "/assets/images/exp2.webp",
+  "/assets/images/exp3.webp",
+  "/assets/images/exp4.webp",
+  "/assets/images/exp5.webp"
 ];
 
 export default function Experience() {

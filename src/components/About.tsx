@@ -23,7 +23,7 @@ export default function About() {
           <div className="relative group">
             <div className="absolute -inset-4 bg-accent/20 rounded-2xl blur-2xl group-hover:bg-accent/30 transition-all duration-500" />
             <img 
-              src="https://picsum.photos/seed/konick-about/600/800" 
+              src="/assets/images/img2.webp" 
               alt="About Konick" 
               className="relative w-full max-w-[300px] md:max-w-[400px] aspect-[3/4] object-cover rounded-[40px] shadow-2xl transition-all duration-700 -rotate-2 opacity-90"
               referrerPolicy="no-referrer"

@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const projectImages = [
-  "https://picsum.photos/seed/p1/1200/800",
-  "https://picsum.photos/seed/p2/1200/800",
-  "https://picsum.photos/seed/p3/1200/800",
-  "https://picsum.photos/seed/p4/1200/800",
-  "https://picsum.photos/seed/p5/1200/800"
+  "/assets/images/p1.webp",
+  "/assets/images/p2.webp",
+  "/assets/images/p3.webp",
+  "/assets/images/p4.webp",
+  "/assets/images/p5.webp"
 ];
 
 export default function Projects() {
